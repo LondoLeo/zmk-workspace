@@ -1,0 +1,506 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Darwin - 25.3.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/3.31.5/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      Subprocess aborted
+      dyld[51606]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51606]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51611]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51611]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51612]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51612]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51617]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51617]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51622]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51622]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51627]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51627]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      Subprocess aborted
+      dyld[51628]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51628]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51633]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51633]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51634]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51634]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51639]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51639]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51644]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51644]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++ 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      Subprocess aborted
+      dyld[51651]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51651]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      dyld[51652]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51652]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      dyld[51653]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+      dyld[51653]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-RRjOt9"
+      binary: "/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-RRjOt9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-RRjOt9'
+        
+        Run Build Command(s): /nix/store/45wr92nx3y6r2q3l2han0x04kc34x204-ninja-1.12.1/bin/ninja -v cmTC_51073
+        [1/2] /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -v -o CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj -c /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+        Target: arm-zephyr-eabi
+        Configured with: /Volumes/Workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=aarch64-build_apple-darwin23.6.0 --host=aarch64-build_apple-darwin23.6.0 --target=arm-zephyr-eabi --prefix=/Volumes/Workspace/output/arm-zephyr-eabi --exec_prefix=/Volumes/Workspace/output/arm-zephyr-eabi --with-local-prefix=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 0.16.9' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (Zephyr SDK 0.16.9) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_51073.dir/'
+         /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/cc1 -quiet -v -iprefix /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/ -D__USES_INITFINI__ /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_51073.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/c5/qr2k68js23sfxtld0vjv344c0000gn/T//ccgWErX3.s
+        GNU C17 (Zephyr SDK 0.16.9) version 12.2.0 (arm-zephyr-eabi)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include"
+        ignoring duplicate directory "/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed"
+        ignoring duplicate directory "/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include"
+        ignoring duplicate directory "/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include
+         /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed
+         /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include
+         /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include
+        End of search list.
+        GNU C17 (Zephyr SDK 0.16.9) version 12.2.0 (arm-zephyr-eabi)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 5e34eede70e5bfe55d80d702e6d5508d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_51073.dir/'
+         /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj /var/folders/c5/qr2k68js23sfxtld0vjv344c0000gn/T//ccgWErX3.s
+        GNU assembler version 2.38 (arm-zephyr-eabi) using BFD version (Zephyr SDK 0.16.9) 2.38
+        COMPILER_PATH=/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/:/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../libexec/gcc/:/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/
+        LIBRARY_PATH=/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/:/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/:/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/bin/cmake -E rm -f libcmTC_51073.a && /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_51073.a  CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj && /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_51073.a && /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/bin/cmake -E touch libcmTC_51073.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include]
+          add: [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+          add: [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include]
+          add: [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include]
+        end of search list found
+        collapse include dir [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include] ==> [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include]
+        collapse include dir [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed] ==> [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+        collapse include dir [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include] ==> [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/arm-zephyr-eabi/sys-include]
+        collapse include dir [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include] ==> [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/arm-zephyr-eabi/include]
+        implicit include dirs: [/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include;/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed;/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/arm-zephyr-eabi/sys-include;/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/arm-zephyr-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-RRjOt9']
+        ignore line: []
+        ignore line: [Run Build Command(s): /nix/store/45wr92nx3y6r2q3l2han0x04kc34x204-ninja-1.12.1/bin/ninja -v cmTC_51073]
+        ignore line: [[1/2] /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -v -o CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj -c /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc]
+        ignore line: [Target: arm-zephyr-eabi]
+        ignore line: [Configured with: /Volumes/Workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=aarch64-build_apple-darwin23.6.0 --host=aarch64-build_apple-darwin23.6.0 --target=arm-zephyr-eabi --prefix=/Volumes/Workspace/output/arm-zephyr-eabi --exec_prefix=/Volumes/Workspace/output/arm-zephyr-eabi --with-local-prefix=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 0.16.9' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (Zephyr SDK 0.16.9) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_51073.dir/']
+        ignore line: [ /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/cc1 -quiet -v -iprefix /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/ -D__USES_INITFINI__ /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_51073.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/c5/qr2k68js23sfxtld0vjv344c0000gn/T//ccgWErX3.s]
+        ignore line: [GNU C17 (Zephyr SDK 0.16.9) version 12.2.0 (arm-zephyr-eabi)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include]
+        ignore line: [ /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+        ignore line: [ /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include]
+        ignore line: [ /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Zephyr SDK 0.16.9) version 12.2.0 (arm-zephyr-eabi)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.3.9.4)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 5e34eede70e5bfe55d80d702e6d5508d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_51073.dir/']
+        ignore line: [ /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj /var/folders/c5/qr2k68js23sfxtld0vjv344c0000gn/T//ccgWErX3.s]
+        ignore line: [GNU assembler version 2.38 (arm-zephyr-eabi) using BFD version (Zephyr SDK 0.16.9) 2.38]
+        ignore line: [COMPILER_PATH=/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/:/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../libexec/gcc/:/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/:/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/:/nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/bin/cmake -E rm -f libcmTC_51073.a && /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_51073.a  CMakeFiles/cmTC_51073.dir/CMakeCCompilerABI.c.obj && /nix/store/k5vfd82nmmvcmw0519bqx2wi5r9ym90b-zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_51073.a && /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/bin/cmake -E touch libcmTC_51073.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-2ohHES"
+      binary: "/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-2ohHES"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-2ohHES'
+        
+        Run Build Command(s): /nix/store/45wr92nx3y6r2q3l2han0x04kc34x204-ninja-1.12.1/bin/ninja -v cmTC_2d724
+        [1/2] /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++    -o CMakeFiles/cmTC_2d724.dir/CMakeCXXCompilerABI.cpp.obj -c /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        FAILED: CMakeFiles/cmTC_2d724.dir/CMakeCXXCompilerABI.cpp.obj 
+        /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++    -o CMakeFiles/cmTC_2d724.dir/CMakeCXXCompilerABI.cpp.obj -c /nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        dyld[51681]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+        dyld[51681]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/xh4gd0g8j4sfwb4gg164a2hc22i0b7jh-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Check for working CXX compiler: /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++"
+    directories:
+      source: "/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-n53m7v"
+      binary: "/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-n53m7v"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-n53m7v'
+        
+        Run Build Command(s): /nix/store/45wr92nx3y6r2q3l2han0x04kc34x204-ninja-1.12.1/bin/ninja -v cmTC_4007a
+        [1/2] /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++    -o CMakeFiles/cmTC_4007a.dir/testCXXCompiler.cxx.obj -c /Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-n53m7v/testCXXCompiler.cxx
+        FAILED: CMakeFiles/cmTC_4007a.dir/testCXXCompiler.cxx.obj 
+        /nix/store/szjcgfymj8fphv7fpx3c9yqgyja6269b-gcc-wrapper-14-20241116/bin/g++    -o CMakeFiles/cmTC_4007a.dir/testCXXCompiler.cxx.obj -c /Users/marcus/Development/zmk-workspace/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-n53m7v/testCXXCompiler.cxx
+        dyld[51688]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib' in /nix/store/iqwbqy4zc7igkr9wm5l2p2d8b0hmd70y-gcc-14-20241116/bin/g++
+        dyld[51688]: duplicate LC_RPATH '/nix/store/j2slpwgyy4w7zjjfyhhpsc7fkg1s19z3-libSystem-B/lib'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
