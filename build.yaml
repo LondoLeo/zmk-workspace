@@ -17,5 +17,11 @@ include:
     shield: cradio_left
   - board: nice_nano
     shield: cradio_right
-  - board: sparkfun_pro_micro_rp2040
-    shield: splaytoraid40
+  - board: seeeduino_xiao_ble
+    shield: regret
+  - board: nice_nano
+    shield: settings_reset
+  - board: nice_nano
+    shield: swulp_left
+  - board: nice_nano
+    shield: swulp_right
