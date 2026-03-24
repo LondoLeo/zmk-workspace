@@ -1,0 +1,161 @@
+#define TAPPING_TERM 200
+#define TAPPING_IDLE 140
+#define QUICK_TAP 100
+
+#define COMBO_IDLE 50
+#define COMBO_TERM 25
+
+#define BASE 0
+#define SYM 1
+#define NAV 2
+#define FUN 3
+#define SYS 4
+
+#define CG(x) LG(LC(x))
+
+#define SHIFT_OVERRIDE(KEY1, KEY2) \
+    override_##KEY1 { \
+        compatible = "zmk,behavior-mod-morph";\
+        #binding-cells = <0>;\
+        bindings = <&kp KEY1>, <&kp KEY2>;\
+        mods = <(MOD_LSFT)>;\
+    }
+
+#define NUM(KC, NUMBER) shift_morph_##KC_##NUMBER: SHIFT_OVERRIDE(KC, NUMBER)
+
+#ifdef SMOL34
+#define LEFT_AND_THUMBS 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33
+#define RIGHT_AND_THUMBS 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33
+
+// COMBO Positions
+#define TOP_MIDDLE_RING_LEFT 1 2
+#define TOP_MIDDLE_INDEX_LEFT 3 2
+#define BOT_MIDDLE_RING_LEFT 21 22
+#define BOT_MIDDLE_INDEX_LEFT 22 23
+
+#define TOP_MIDDLE_RING_RIGHT 7 8
+#define TOP_MIDDLE_INDEX_RIGHT 6 7
+#define BOT_MIDDLE_RING_RIGHT 27 28
+#define BOT_MIDDLE_INDEX_RIGHT 26 27
+
+#endif
+
+
+behaviors {
+    hml: homerow_mods_left {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+        flavor = "balanced";
+        tapping-term-ms = <TAPPING_TERM>;
+        require-prior-idle-ms = <TAPPING_IDLE>;
+        quick-tap-ms = <QUICK_TAP>;
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <RIGHT_AND_THUMBS>;
+    };
+    hmr: homerow_mods_right {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+        flavor = "balanced";
+        tapping-term-ms = <TAPPING_TERM>;
+        require-prior-idle-ms = <TAPPING_IDLE>;
+        quick-tap-ms = <QUICK_TAP>;
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <LEFT_AND_THUMBS>;
+    };
+    qmt: quick_mod_tap {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "hold-preferred";
+        bindings = <&kp>, <&kp>;
+        tapping-term-ms = <TAPPING_TERM>;
+        quick-tap-ms = <QUICK_TAP>;
+        hold-trigger-on-release;
+    };
+    blt: balanced_layer_tap {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        bindings = <&mo>, <&kp>;
+        flavor = "balanced";
+        tapping-term-ms = <TAPPING_TERM>;
+        require-prior-idle-ms = <TAPPING_IDLE>;
+        quick-tap-ms = <QUICK_TAP>;
+        hold-trigger-on-release;
+    };
+    qlt: quick_layer_tab {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        bindings = <&mo>, <&kp>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <TAPPING_TERM>;
+        quick-tap-ms = <QUICK_TAP>;
+        hold-trigger-on-release;
+    };
+    qsk: quick_sticky_key {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+        ignore-modifiers;
+        lazy;
+    };
+};
+macros {
+    dbrst: dbrst {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = 
+            <&macro_tap_time 30>,
+            <&kp RET &kp RET &kp RET>,
+            <&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp RET>,
+            <&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8>,
+            <&kp RET &kp RET>;
+    };
+};
+
+combos {
+    compatible = "zmk,combos";
+    ralt1 { key-positions = <BOT_MIDDLE_RING_LEFT>; bindings = <&qsk RIGHT_ALT>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE SYM>;};
+    ralt2 { key-positions = <BOT_MIDDLE_RING_RIGHT>; bindings = <&qsk RIGHT_ALT>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE SYM>;};
+    esc { key-positions = <BOT_MIDDLE_INDEX_LEFT>; bindings = <&kp ESC>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE SYM>;};
+    tab { key-positions = <BOT_MIDDLE_INDEX_RIGHT>; bindings = <&kp TAB>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE SYM>;};
+    hypr1 { key-positions = <TOP_MIDDLE_RING_LEFT>; bindings = <&kp LA(LC(LG(F12))) >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE SYM>;};
+    hypr2 { key-positions = <TOP_MIDDLE_RING_RIGHT>; bindings = <&kp LA(LC(LG(F12))) >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE SYM>;};
+    bsls { key-positions = <TOP_MIDDLE_INDEX_LEFT>; bindings = <&qsk BSLH >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE SYM>;};
+    pipe { key-positions = <TOP_MIDDLE_INDEX_RIGHT>; bindings = <&kp PIPE >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE SYM>;};
+};
+
+ 
+conditional_layers {
+    compatible = "zmk,conditional-layers";
+    sys_layer {
+        if-layers = <NAV FUN>;
+        then-layer = <SYS>;
+    };
+};
+// Numbers 
+num1: SHIFT_OVERRIDE(SQT, N1);
+num2: SHIFT_OVERRIDE(LBKT, N2);
+num3: SHIFT_OVERRIDE(LBRC, N3);
+num4: SHIFT_OVERRIDE(LPAR, N4);
+num5: SHIFT_OVERRIDE(HASH, N5);
+num6: SHIFT_OVERRIDE(AT, N6);
+num7: SHIFT_OVERRIDE(RPAR, N7);
+num8: SHIFT_OVERRIDE(RBRC, N8);
+num9: SHIFT_OVERRIDE(RBKT, N9);
+num0: SHIFT_OVERRIDE(DQT, N0);
+
+comm: SHIFT_OVERRIDE(COMMA, SEMI);
+dot: SHIFT_OVERRIDE(DOT, COLON);
+
+minus: SHIFT_OVERRIDE(MINUS, MINUS);
+equal: SHIFT_OVERRIDE(EQUAL, EQUAL);
+under: SHIFT_OVERRIDE(UNDER, CARET);
+lessthan: SHIFT_OVERRIDE(LT, BSLH);
+greaterthan: SHIFT_OVERRIDE(GT, PIPE);
+excl: SHIFT_OVERRIDE(EXCL, PLUS);
+star: SHIFT_OVERRIDE(STAR, HASH);
+amps: SHIFT_OVERRIDE(AMPS, DLLR);
+
