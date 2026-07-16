@@ -13,15 +13,34 @@
 #
 ---
 include:
+    # Notes on the dongle: Check for the comments in...
+    #   - zmk/app/boards/shields/cradio/Kconfig.defconfig
+    # And build with `just build cradio -p`
+    #  -p is for "pristine", to make sure the build cache isnt used
+  - board: nice_nano
+    shield: cradio_dongle
   - board: nice_nano
     shield: cradio_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano
     shield: cradio_right
+
+  - board: nice_nano
+    shield: swulp_dongle
+  - board: nice_nano
+    shield: swulp_left
+    # cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano
+    shield: swulp_right
+
+
   - board: seeeduino_xiao_ble
     shield: regret
   - board: nice_nano
     shield: settings_reset
-  - board: nice_nano
-    shield: swulp_left
-  - board: nice_nano
-    shield: swulp_right
+  - board: sparkfun_pro_micro_rp2040
+    shield: endgame
+
+  - board: sparkfun_pro_micro_rp2040
+    shield: splaytoraid40
+
