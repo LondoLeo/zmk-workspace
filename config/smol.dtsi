@@ -5,16 +5,17 @@
 #define QUICK_TAP 170
 
 #define COMBO_IDLE 50
+#define COMBO_IDLE_GAME 150
 #define COMBO_TERM 25
 
 #define BASE 0
 #define MAK 1
 #define SYMQ 2
 #define SYMM 3
-#define NAV 4
-#define FUN 5
-#define SYS 6
-#define GAME 7
+#define GAME 4
+#define NAV 5
+#define FUN 6
+#define SYS 7
 
 #define CG(x) LG(LC(x))
 
@@ -59,6 +60,15 @@ behaviors {
         bindings = <&kp>, <&kp>;
         tapping-term-ms = <TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP>;
+    };
+    bmt: balanced_mod_tap {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+        flavor = "balanced";
+        tapping-term-ms = <TAPPING_TERM>;
+        require-prior-idle-ms = <TAPPING_IDLE>;
+        quick-tap-ms = <QUICK_TAP>;
         hold-trigger-on-release;
     };
     blt: balanced_layer_tap {
@@ -78,7 +88,6 @@ behaviors {
         flavor = "hold-preferred";
         tapping-term-ms = <TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP>;
-        hold-trigger-on-release;
     };
     qsk: quick_sticky_key {
         compatible = "zmk,behavior-sticky-key";
@@ -107,13 +116,15 @@ combos {
     compatible = "zmk,combos";
     ralt1 { key-positions = <BOT_MIDDLE_RING_LEFT>; bindings = <&qsk RIGHT_ALT>;  timeout-ms = <COMBO_TERM>; layers = <BASE MAK SYMM SYMQ>;};
     ralt2 { key-positions = <BOT_MIDDLE_RING_RIGHT>; bindings = <&qsk RIGHT_ALT>; timeout-ms = <COMBO_TERM>;layers = <BASE MAK SYMM SYMQ>;};
-    esc { key-positions = <BOT_MIDDLE_INDEX_LEFT>; bindings = <&kp ESC>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE MAK SYMM SYMQ>;};
+    esc { key-positions = <BOT_MIDDLE_INDEX_LEFT>; bindings = <&kp ESC>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE MAK SYMM SYMQ GAME>;};
     tab { key-positions = <BOT_MIDDLE_INDEX_RIGHT>; bindings = <&kp TAB>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE MAK SYMM SYMQ>;};
-    hypr1 { key-positions = <TOP_MIDDLE_RING_LEFT>; bindings = <&kp LA(LC(LG(F12))) >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE MAK SYMM SYMQ>;};
-    hypr2 { key-positions = <TOP_MIDDLE_RING_RIGHT>; bindings = <&kp LA(LC(LG(F12))) >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE MAK SYMM SYMQ>;};
+    // hypr1 { key-positions = <TOP_MIDDLE_RING_LEFT>; bindings = <&kp LA(LC(LG(F12))) >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE MAK SYMM SYMQ>;};
+    // hypr2 { key-positions = <TOP_MIDDLE_RING_RIGHT>; bindings = <&kp LA(LC(LG(F12))) >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE MAK SYMM SYMQ>;};
     bsls { key-positions = <TOP_MIDDLE_INDEX_LEFT>; bindings = <&kp BSLH >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE MAK SYMM SYMQ>;};
     pipe { key-positions = <TOP_MIDDLE_INDEX_RIGHT>; bindings = <&kp PIPE >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE MAK SYMM SYMQ>;};
-    toggle_game {key-positions = <20 29>; bindings = <&tog GAME>; layers = <GAME>;};
+    bootloader { key-positions = <BOOTLOADER_COMBO>; bindings = <&bootloader>; layers = <SYS>;};
+
+    // game_g { key-positions = <BOT_MIDDLE_RING_LEFT>; bindings = <&kp G>;require-prior-idle-ms = <COMBO_IDLE_GAME>; timeout-ms = <COMBO_TERM>;layers = <GAME>;};
 };
 
  
@@ -129,7 +140,7 @@ num1: SHIFT_OVERRIDE(SQT, N1);
 num2: SHIFT_OVERRIDE(LBKT, N2);
 num3: SHIFT_OVERRIDE(LBRC, N3);
 num4: SHIFT_OVERRIDE(LPAR, N4);
-num5: SHIFT_OVERRIDE(HASH, N5);
+num5: SHIFT_OVERRIDE(PRCNT, N5);
 num6: SHIFT_OVERRIDE(AT, N6);
 num7: SHIFT_OVERRIDE(RPAR, N7);
 num8: SHIFT_OVERRIDE(RBRC, N8);
