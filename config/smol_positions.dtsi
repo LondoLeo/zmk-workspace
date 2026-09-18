@@ -25,6 +25,17 @@
 
 #define BOOTLOADER_COMBO 10 19
 
+#define TOP_VERT_0 0 10
+#define TOP_VERT_1 1 11
+#define TOP_VERT_2 2 12
+#define TOP_VERT_3 3 13
+#define TOP_VERT_4 4 14
+#define TOP_VERT_5 5 15
+#define TOP_VERT_6 6 16
+#define TOP_VERT_7 7 17
+#define TOP_VERT_8 8 18
+#define TOP_VERT_9 9 19
+
 #endif
 
 #ifdef ENDGAME

@@ -1,0 +1,51 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+    
+#define TAPPING_TERM 200
+#define TAPPING_IDLE 140
+#define QUICK_TAP 170
+/ {
+
+    behaviors {
+        qmt: quick_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+            tapping-term-ms = <TAPPING_TERM>;
+            quick-tap-ms = <QUICK_TAP>;
+        };
+        bmt: balanced_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            flavor = "balanced";
+            tapping-term-ms = <TAPPING_TERM>;
+            require-prior-idle-ms = <TAPPING_IDLE>;
+            quick-tap-ms = <QUICK_TAP>;
+            hold-trigger-on-release;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        esc { key-positions = <22 23>; bindings = <&kp ESC>; require-prior-idle-ms = <50>; timeout-ms = <200>;};
+    };
+    keymap {
+        compatible = "zmk,keymap";
+
+        game_layer {
+            display-name = "Game";
+            bindings = <
+                &kp T      &kp Q       &kp W       &kp E          &kp R          &none          &none          &none       &none       &none   
+                &bmt LCTRL G&kp A      &kp S       &kp D          &kp F          &none          &none          &none       &none       &none    
+                &qmt LALT B&kp Z       &kp X       &kp C          &kp V          &none          &none          &none       &none       &none      
+                                                   &qmt LSHFT O   &kp SPACE      &none          &none        
+            >;
+        };
+    };
+};

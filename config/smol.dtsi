@@ -14,8 +14,9 @@
 #define SYMM 3
 #define GAME 4
 #define NAV 5
-#define FUN 6
-#define SYS 7
+#define GNAV 6
+#define FUN 7
+#define SYS 8
 
 #define CG(x) LG(LC(x))
 
@@ -124,7 +125,11 @@ combos {
     pipe { key-positions = <TOP_MIDDLE_INDEX_RIGHT>; bindings = <&kp PIPE >; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE MAK SYMM SYMQ>;};
     bootloader { key-positions = <BOOTLOADER_COMBO>; bindings = <&bootloader>; layers = <SYS>;};
 
-    // game_g { key-positions = <BOT_MIDDLE_RING_LEFT>; bindings = <&kp G>;require-prior-idle-ms = <COMBO_IDLE_GAME>; timeout-ms = <COMBO_TERM>;layers = <GAME>;};
+    copy_base { key-positions = <TOP_VERT_3>; bindings = <&kp LG(X)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
+    copy_mak { key-positions = <TOP_VERT_3>; bindings = <&kp LG(C)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
+    paste { key-positions = <TOP_VERT_4>; bindings = <&kp LG(V)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE MAK>;};
+    gui_tab { key-positions = <TOP_VERT_2>; bindings = <&kp LG(TAB)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
+    alt_tab { key-positions = <TOP_VERT_2>; bindings = <&kp LA(TAB)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <MAK>;};
 };
 
  

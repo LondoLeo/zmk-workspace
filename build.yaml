@@ -21,9 +21,12 @@ include:
     shield: cradio_dongle
   - board: nice_nano
     shield: cradio_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    # cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano
     shield: cradio_right
+
+  - board: nice_nano
+    shield: gamio_left
 
   - board: nice_nano
     shield: swulp_dongle

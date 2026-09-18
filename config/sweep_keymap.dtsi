@@ -43,7 +43,7 @@ keymap {
             &kp Q      &kp W       &kp F       &kp P          &kp B          &kp Z          &kp L          &kp U       &kp Y       &kp BSPC
             &bmt LCTRL A&kp R      &kp S       &kp T          &kp G          &kp M          &kp N          &kp E       &kp I       &kp O   
             &qmt LALT J&kp X       &kp C       &kp D          &kp V          &kp K          &kp H          &kp COMMA   &kp DOT     &kp SLASH  
-                                               &qmt LSHFT N1  &kp SPACE      &qlt NAV RET   &kp LG(TAB)
+                                               &qmt LSHFT N1  &kp SPACE      &qlt GNAV RET  &kp LG(TAB)
         >;
     };
     nav_layer {
@@ -52,6 +52,15 @@ keymap {
             &none       &none       &none      &none          &none         &tog GAME       &kp HOME       &kp END      &none      &kp DEL
             &none       &sk LALT    &sk LCMD   &sk LCTRL      &none         &kp LEFT        &kp DOWN       &kp UP       &kp RIGHT  &kp LC(Q)
             &none       &none       &none      &none          &none         &none           &kp PG_DN      &kp PG_UP    &none      &none 
+                                               &trans         &trans        &trans          &trans
+        >;
+    };
+    game_nav {
+        display-name = "Nav";
+        bindings = <
+            &none       &kp N1      &kp N2     &kp N3         &none         &tog GAME       &kp LG(M)      &kp LG(I)    &none      &kp DEL
+            &none       &kp N4      &kp N5     &kp N6         &kp N0        &kp LEFT        &kp DOWN       &kp UP       &kp RIGHT  &kp SQT   
+            &none       &kp N7      &kp N8     &kp N9         &none         &none           &kp PG_DN      &kp PG_UP    &none      &none 
                                                &trans         &trans        &trans          &trans
         >;
     };
